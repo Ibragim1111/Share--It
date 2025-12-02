@@ -15,8 +15,9 @@ services:
     restart: unless-stopped
 
   app:
-    build: .
-    container_name: shareit-app
+    build: server
+    image: shareit-server
+    container_name: shareit-server
     ports:
       - "8080:8080"
     depends_on:
@@ -29,3 +30,4 @@ services:
 
 volumes:
   postgres_data:
+

@@ -18,4 +18,7 @@ public interface ItemRepository extends JpaRepository<Item, Long> {
             OR i.description ILIKE %:text%)
             \s""")
     List<Item> searchAvailableItems(String text);
+
+    // В ItemRepository
+    List<Item> findByRequestId(Long requestId);
 }
