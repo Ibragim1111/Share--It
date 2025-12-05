@@ -1,7 +1,5 @@
 package ru.practicum.shareit.item.comments;
 
-
-
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
