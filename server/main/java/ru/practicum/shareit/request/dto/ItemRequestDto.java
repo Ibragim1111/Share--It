@@ -1,8 +1,5 @@
 package ru.practicum.shareit.request.dto;
 
-// ItemRequestDto.java
-
-
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
