@@ -1,9 +1,9 @@
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
+!gateway/src/main/**/target/
 !**/src/test/**/target/
-
+volumes/
 ### STS ###
 .apt_generated
 .classpath
@@ -19,6 +19,11 @@ target/
 *.iml
 *.ipr
 
+# Директории с данными
+
+data/
+logs/
+tmp/
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
@@ -26,7 +31,7 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
+!gateway/src/main/**/build/
 !**/src/test/**/build/
 
 ### VS Code ###
