@@ -8,13 +8,12 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import ru.practicum.shareit.exceptions.exception.NotFoundException;
-import ru.practicum.shareit.item.dto.ItemMapper;
+
 import ru.practicum.shareit.item.model.Item;
 import ru.practicum.shareit.item.storage.ItemRepository;
-import ru.practicum.shareit.request.ItemRequest;
+
 import ru.practicum.shareit.request.dto.ItemRequestDto;
-import ru.practicum.shareit.request.CreateItemRequestDto;
-import ru.practicum.shareit.request.ItemRequestRepository;
+
 import ru.practicum.shareit.user.User;
 import ru.practicum.shareit.user.service.UserService;
 
