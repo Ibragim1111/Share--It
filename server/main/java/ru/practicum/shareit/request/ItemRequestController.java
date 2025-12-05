@@ -4,8 +4,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import ru.practicum.shareit.request.dto.ItemRequestDto;
-import ru.practicum.shareit.request.CreateItemRequestDto;
-import ru.practicum.shareit.request.ItemRequestService;
+
 
 import java.util.List;
 
