@@ -89,9 +89,15 @@ public class BaseClient {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
         headers.setAccept(List.of(MediaType.APPLICATION_JSON));
+
+        // ВСЕГДА устанавливаем заголовок, даже если null (но можно и не устанавливать)
         if (userId != null) {
             headers.set(USER_ID_HEADER, String.valueOf(userId));
+        } else {
+            // Очищаем заголовок, если userId null
+            headers.remove(USER_ID_HEADER);
         }
+
         return headers;
     }
 
